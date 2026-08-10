@@ -31,7 +31,7 @@ The class imbalance (spheroidite dominates ~2:1 over the other two combined) dir
 ## Results
 
 - **86% overall test accuracy** across 3 classes
-- **100% F1-score on network cementite** — despite being the minority class, the model separates it cleanly, likely due to its visually distinct network-like grain boundary structure
+- 100% F1-score on network cementite — the model separates it cleanly, consistent with its visually distinct grain boundary structure confirmed by UMAP clustering
 - Confusion matrix and training curves included in the repo (`confusion_matrix.png`, `training_curves.png`)
 
 ## Stack
@@ -42,7 +42,6 @@ The class imbalance (spheroidite dominates ~2:1 over the other two combined) dir
 
 ```
 ├── steel_microstructure_cnn.ipynb      # Main training + evaluation notebook (ResNet-50)
-├── steel_microstructure_unet.ipynb     # U-Net experimentation notebook
 ├── microstructure_eda.ipynb            # Exploratory data analysis
 ├── train_split.csv / val_split.csv / test_split.csv
 ├── class_distribution.png
